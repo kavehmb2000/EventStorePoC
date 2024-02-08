@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EventStorePoC.Domain.Entities;
+using EventStorePoC.Shared.Abstractions.Commands;
 
-namespace EventStorePoC.Application.Commands
-{
-    internal class UpdateCustomer
-    {
-    }
-}
+namespace EventStorePoC.Application.Commands;
+
+    public record UpdateCustomer(Customer c) : ICommand;

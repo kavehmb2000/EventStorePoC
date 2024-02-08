@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EventStorePoC.Domain.Entities;
+using EventStorePoC.Domain.ValueObjects;
+using EventStorePoC.Shared.Abstractions.Commands;
 
 namespace EventStorePoC.Application.Commands
 {
-    internal class RemoveCustomer
-    {
-    }
+    //public record RemoveCustomer(Customer c) : ICommand;
+    public record RemoveCustomer(CustomerId Id) : ICommand;
 }

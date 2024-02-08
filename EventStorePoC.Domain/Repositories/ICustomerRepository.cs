@@ -14,5 +14,6 @@ namespace EventStorePoC.Domain.Repositories
         Task UpdateAsync(Customer customer);
         Task DeleteAsync(Customer customer);
         Task<Customer> GetByIdAsync(CustomerId id);
+        Task<Customer> GetByNameAsync(FirstName firstName, LastName lastName, DateOfBirth dob);
     }
 }
